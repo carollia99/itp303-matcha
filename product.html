@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carol's Store</title>
+        <style>
+            /* DEFAULT CSS FOR MOBILE */
+             html,body {
+                padding: 0;
+                margin: 0;
+                text-align: center;
+            }
+            #header {
+                background-color: rosybrown;
+            }
+            #container {
+                text-align: center;
+            }
+            .row {
+                display: inline-block;
+                text-align: center;
+            }
+            #header h1 {
+                text-align: center;
+                margin: 0;
+                font-size: 50px;
+                padding: 20px;
+            }
+            .product {
+                width: 50%;
+                padding: 10px;
+                margin: 15px;
+                border-style: solid;
+                border-color: black;
+                border-width: thick;
+                display: inline-block;
+            }
+            .product img{
+                width: 100%;
+            }
+            .focus-product {
+                text-align: center;
+            }
+            .focus-product img {
+                width: 90%;
+            }
+            .focus-product #promo {
+                display:inline-block;
+                border-style: solid;
+                border-color: darkgreen;
+            }
+            #rating img {
+                width: 40%;
+            }
+            #promo {
+                background-color: lightgreen;
+                width: 40%;
+                padding: 3px;
+                margin-top: px;
+            }
+            #information {
+                text-align: left;
+            }
+            /*---TABLET---*/
+            @media(min-width: 768px) {
+                #main-product {
+                    min-height: 500px;
+                }
+                #main-product .focus-product {
+                    width: 50%;
+                    float: left;
+                }
+                .product {
+                    float: left;
+                    width: 42%;
+                }
+            }
+            /*---DESKTOP---*/
+           @media(min-width: 991px) {
+               .product {
+                   float: left;
+                   width: 20%;
+               }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Carol's Store</h1>
+        </div>
+        <div id="container"></div>
+            <div id="product-name">
+                <h1>Matcha Set</h1>
+            </div>
+            <div id="main-product" class="row">
+                <div class="focus-product">
+                    <img src="matcha-set.jpg">
+                    <div id="promo">
+                        Use promo code GREENDAY to get 20% off!
+                    </div>
+                </div>
+                <div class="focus-product">
+                    <div id="price">
+                        <h3>Price: $89.99</h3>
+                    </div>
+                    <div id="rating">
+                        <img src="matcha-rating.png">
+                    </div>
+                    <div id="information">
+                        <ul>
+                            <li>Our matcha is 100% pure, organic ceremonial matcha green tea powder. It's cultivated in Kagoshima, Japan by a 12th generation tea master whose family has nearly 400 years of matcha making expertise.</li>
+                            <li>The highest quality matcha for less than $1 / serving. Mix 1/2 tsp into water or milk and enjoy it hot or cold depending on the weather.</li>
+                            <li>Our members love getting creative with sweetened lattes, tea, smoothies and more!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="product">
+                    <img src="matcha-bowl.jpeg">
+                </div>
+                <div class="product">
+                    <img src="matcha-whisk.jpg">
+                </div>
+                <div class="product">
+                    <img src="matcha-spoon.jpeg">
+                </div>
+                <div class="product">
+                    <img src="matcha-pure.jpeg">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
