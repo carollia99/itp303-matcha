@@ -6,7 +6,7 @@
         <title>Carol's Store</title>
         <style>
             /* DEFAULT CSS FOR MOBILE */
-             html,body {
+            html,body {
                 padding: 0;
                 margin: 0;
                 text-align: center;
@@ -26,10 +26,6 @@
                 text-align: center;
                 width: 95%;
             }
-            .center-row {
-                display: inline-block;
-                background-color: pink;
-            }
             #header h1 {
                 text-align: center;
                 margin: 0;
@@ -39,10 +35,10 @@
             .product {
                 width: 50%;
                 margin: 15px;
+                display: inline-block;
                 border-style: solid;
                 border-color: black;
                 border-width: thick;
-                display: inline-block;
                 position: relative;
             }
             .product img{
@@ -96,21 +92,19 @@
             /*---TABLET---*/
             @media(min-width: 768px) {
                 #main-product {
-                    min-height: 500px;
+                    min-height: 350px;
                 }
                 #main-product .focus-product {
                     width: 50%;
                     float: left;
                 }
                 .product {
-                    float: left;
                     width: 42%;
                 }
             }
             /*---DESKTOP---*/
            @media(min-width: 991px) {
                .product {
-                   float: left;
                    width: 20%;
                }
             }
@@ -149,27 +143,25 @@
             </div>
             <div class="row">
                 <h2>Related Products</h2>
-                <div class="center-row">
-                    <div class="product">
-                        <img src="matcha-bowl.jpeg">
-                        <img id="black" src="black.jpg">
-                        <div class="product-name">Bowl</div>
-                    </div>
-                    <div class="product">
-                        <img src="matcha-whisk.jpg">
-                        <img id="black" src="black.jpg">
-                        <div class="product-name">Bamboo Whisk</div>
-                    </div>
-                    <div class="product">
-                        <img src="matcha-spoon.jpeg">
-                        <img id="black" src="black.jpg">
-                        <div class="product-name">Scoop</div>
-                    </div>
-                    <div class="product">
-                        <img src="matcha-pure.jpeg">
-                        <img id="black" src="black.jpg">
-                        <div class="product-name">Matcha Powder</div>
-                    </div>
+                <div class="product">
+                    <img src="matcha-bowl.jpeg">
+                    <img id="black" src="black.jpg">
+                    <div class="product-name">Bowl</div>
+                </div>
+                <div class="product">
+                    <img src="matcha-whisk.jpg">
+                    <img id="black" src="black.jpg">
+                    <div class="product-name">Bamboo Whisk</div>
+                </div>
+                <div class="product">
+                    <img src="matcha-spoon.jpeg">
+                    <img id="black" src="black.jpg">
+                    <div class="product-name">Scoop</div>
+                </div>
+                <div class="product">
+                    <img src="matcha-pure.jpeg">
+                    <img id="black" src="black.jpg">
+                    <div class="product-name">Matcha Powder</div>
                 </div>
             </div>
         </div>
