@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
@@ -27,10 +27,6 @@
             #header {
                 background-color: #6FA377;
             }
-            #container {
-                text-align: center;
-                width: 95%;
-            }
             .row {
                 display: inline-block;
                 text-align: center;
@@ -55,7 +51,7 @@
                 width: 100%;
                 display: block;
             }
-            .product #black {
+            .product .black {
                 position: absolute;
                 top:0;
                 left: 0;
@@ -72,7 +68,7 @@
                 min-width: 200px;
             }
             #promo {
-                min-width: 300px;
+                min-width: 200px;
                 background-color: #6FA377;
                 color: #fff;
                 width: 40%;
@@ -99,7 +95,7 @@
             .product:hover .product-name {
                 visibility: visible;
             }
-            .product:hover #black {
+            .product:hover .black {
                 visibility: visible;
                 opacity: 0.6;
             }
@@ -128,54 +124,52 @@
         <div id="header">
             <h1>Carol's Store</h1>
         </div>
-        <div id="container"></div>
-            <div id="main-product" class="row">
-                <h2>Matcha Set</h2>
-                <div class="focus-product">
-                    <img src="matcha-set.jpg">
-                    <div id="promo">
-                        Use promo code GREENDAY to get 20% off!
-                    </div>
-                </div>
-                <div class="focus-product">
-                    <div id="price">
-                        <h3>Price: $89.99</h3>
-                    </div>
-                    <div class="leftalign" id="rating">
-                        <img src="matcha-rating.png">
-                    </div>
-                    <div class="leftalign">
-                        <ul class="spacious-list"> 
-                            <li> Our best-selling Matcha Starter Kit includes 60 servings ceremonial & organic matcha PLUS a bamboo whisk, whisk stand and scooper so you can whip up a perfect cup in the comfort of your home.</li>
-                            <li>Our matcha is 100% pure, organic ceremonial matcha green tea powder. It's cultivated in Kagoshima, Japan by a 12th generation tea master whose family has nearly 400 years of matcha making expertise.</li>
-                            <li>The highest quality matcha for less than $1 / serving. Mix 1/2 tsp into water or milk and enjoy it hot or cold depending on the weather.</li>
-                            <li>Our members love getting creative with sweetened lattes, tea, smoothies and more!</li>
-                        </ul>
-                    </div>
+        <div id="main-product" class="row">
+            <h2>Matcha Set</h2>
+            <div class="focus-product">
+                <img src="matcha-set.jpg" alt="matcha set">
+                <div id="promo">
+                    Use promo code GREENDAY to get 20% off!
                 </div>
             </div>
-            <div class="row">
-                <h3>Related Products</h3>
-                <div class="product">
-                    <img src="matcha-bowl.jpeg">
-                    <img id="black" src="black.jpg">
-                    <div class="product-name">Bowl</div>
+            <div class="focus-product">
+                <div id="price">
+                    <h3>Price: $89.99</h3>
                 </div>
-                <div class="product">
-                    <img src="matcha-whisk.jpg">
-                    <img id="black" src="black.jpg">
-                    <div class="product-name">Bamboo Whisk</div>
+                <div class="leftalign" id="rating">
+                    <img src="matcha-rating.png" alt="product rating">
                 </div>
-                <div class="product">
-                    <img src="matcha-spoon.jpeg">
-                    <img id="black" src="black.jpg">
-                    <div class="product-name">Scoop</div>
+                <div class="leftalign">
+                    <ul class="spacious-list"> 
+                        <li> Our best-selling Matcha Starter Kit includes 60 servings ceremonial & organic matcha PLUS a bamboo whisk, whisk stand and scooper so you can whip up a perfect cup in the comfort of your home.</li>
+                        <li>Our matcha is 100% pure, organic ceremonial matcha green tea powder. It's cultivated in Kagoshima, Japan by a 12th generation tea master whose family has nearly 400 years of matcha making expertise.</li>
+                        <li>The highest quality matcha for less than $1 / serving. Mix 1/2 tsp into water or milk and enjoy it hot or cold depending on the weather.</li>
+                        <li>Our members love getting creative with sweetened lattes, tea, smoothies and more!</li>
+                    </ul>
                 </div>
-                <div class="product">
-                    <img src="matcha-pure.jpeg">
-                    <img id="black" src="black.jpg">
-                    <div class="product-name">Matcha Powder</div>
-                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h3>Related Products</h3>
+            <div class="product">
+                <img src="matcha-bowl.jpeg" alt="matcha bowl">
+                <img class="black" src="black.jpg" alt="opacity">
+                <div class="product-name">Bowl</div>
+            </div>
+            <div class="product">
+                <img src="matcha-whisk.jpg" alt="matcha whisk">
+                <img class="black" src="black.jpg" alt="opacity">
+                <div class="product-name">Bamboo Whisk</div>
+            </div>
+            <div class="product">
+                <img src="matcha-spoon.jpeg" alt="matcha spoon">
+                <img class="black" src="black.jpg" alt="opacity">
+                <div class="product-name">Scoop</div>
+            </div>
+            <div class="product">
+                <img src="matcha-pure.jpeg" alt="just matcha">
+                <img class="black" src="black.jpg" alt="opacity">
+                <div class="product-name">Matcha Powder</div>
             </div>
         </div>
     </body>
