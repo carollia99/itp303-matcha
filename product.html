@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
         <title>Carol's Store</title>
         <style>
             /* DEFAULT CSS FOR MOBILE */
@@ -10,15 +11,24 @@
                 margin: 0;
                 text-align: center;
             }
+            body {
+                font-family: 'Dosis', sans-serif;
+            }
             #header {
                 background-color: rosybrown;
             }
             #container {
                 text-align: center;
+                width: 95%;
             }
             .row {
                 display: inline-block;
                 text-align: center;
+                width: 95%;
+            }
+            .center-row {
+                display: inline-block;
+                background-color: pink;
             }
             #header h1 {
                 text-align: center;
@@ -28,15 +38,22 @@
             }
             .product {
                 width: 50%;
-                padding: 10px;
                 margin: 15px;
                 border-style: solid;
                 border-color: black;
                 border-width: thick;
                 display: inline-block;
+                position: relative;
             }
             .product img{
                 width: 100%;
+                display: block;
+            }
+            .product #black {
+                position: absolute;
+                top:0;
+                left: 0;
+                visibility: hidden;
             }
             .focus-product {
                 text-align: center;
@@ -60,6 +77,21 @@
             }
             #information {
                 text-align: left;
+            }
+            .product .product-name {
+                text-align: center;
+                position: absolute;
+                top: 40%; 
+                left: 40%;
+                color: white;
+                visibility: hidden;
+            }
+            .product:hover .product-name {
+                visibility: visible;
+            }
+            .product:hover #black {
+                visibility: visible;
+                opacity: 0.6;
             }
             /*---TABLET---*/
             @media(min-width: 768px) {
@@ -117,17 +149,27 @@
             </div>
             <div class="row">
                 <h2>Related Products</h2>
-                <div class="product">
-                    <img src="matcha-bowl.jpeg">
-                </div>
-                <div class="product">
-                    <img src="matcha-whisk.jpg">
-                </div>
-                <div class="product">
-                    <img src="matcha-spoon.jpeg">
-                </div>
-                <div class="product">
-                    <img src="matcha-pure.jpeg">
+                <div class="center-row">
+                    <div class="product">
+                        <img src="matcha-bowl.jpeg">
+                        <img id="black" src="black.jpg">
+                        <div class="product-name">Bowl</div>
+                    </div>
+                    <div class="product">
+                        <img src="matcha-whisk.jpg">
+                        <img id="black" src="black.jpg">
+                        <div class="product-name">Bamboo Whisk</div>
+                    </div>
+                    <div class="product">
+                        <img src="matcha-spoon.jpeg">
+                        <img id="black" src="black.jpg">
+                        <div class="product-name">Scoop</div>
+                    </div>
+                    <div class="product">
+                        <img src="matcha-pure.jpeg">
+                        <img id="black" src="black.jpg">
+                        <div class="product-name">Matcha Powder</div>
+                    </div>
                 </div>
             </div>
         </div>
